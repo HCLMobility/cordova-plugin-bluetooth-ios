@@ -1,0 +1,21 @@
+{
+  "name": "com-plugin-bluetoothscan",
+  "version": "1.0.0",
+  "description": "This is used to scan bluetooth device using cordova plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "cordova": {
+    "id": "com-plugin-bluetoothscan",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "author": {
+    "name":"Anu"
+  },
+  "license": "ISC",
+  "private": true,
+  "publishConfig":{"registry":"http://my-internal-registry.local"}
+}

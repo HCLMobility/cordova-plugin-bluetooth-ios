@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com-plugin-bluetoothscan" version="0.0.1"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>BluetoothScan</name>
+    <js-module name="BluetoothScan" src="www/BluetoothScan.js">
+        <clobbers target="BluetoothScan" />
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="BluetoothScan">
+                <param name="ios-package" value="BluetoothScan" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/BluetoothScan.swift" />
+        <source-file src="src/ios/BLEScan.swift"/>
+        <source-file src="src/ios/BTDeviceScan/Bluetooth.swift"/>
+        <source-file src="src/ios/BTDeviceScan/BluetoothDevice.swift"/>
+        <source-file src="src/ios/BTDeviceScan/BluetoothModel.swift"/>
+        <header-file src="src/ios/BTDeviceScan/BluetoothDevice.h"/>
+        <header-file src="src/ios/BTDeviceScan/BluetoothDeviceHandler.h"/>
+        <source-file src="src/ios/BTDeviceScan/BluetoothDeviceHandler.m"/>
+        <header-file src="src/ios/BTDeviceScan/BluetoothManagerHandler.h"/>
+        <source-file src="src/ios/BTDeviceScan/BluetoothManagerHandler.m"/>
+        <header-file src="src/ios/BTDeviceScan/BluetoothManager.h"/>
+        <header-file src="src/ios/BTDeviceScan/BTDeviceScan-Bridging-Header.h"/>
+    </platform>
+</plugin>
